@@ -1,7 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
+import NavigationBar from '@/components/NavigationBar';
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
+const montserratFont = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat'
+});
 
 export const metadata = {
   title: 'R & S Constructions | General Contractor & Home Remodeling',
@@ -15,8 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} `}>
-        {children}
+      <body className={`${montserratFont.className} font-sans w-full min-h-screen bg-ivory`}>
+        <div className='max-w-[1920px] mx-auto'>
+          <NavigationBar />
+          {children}
+        </div>
       </body>
     </html>
   )

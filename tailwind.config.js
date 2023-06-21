@@ -7,7 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        sans: ['var(--font-montserrat)'],
+      },
+      colors: {
+        ivory: "#FDFFF5", // Ivory
+      },
     },
   },
   plugins: [],

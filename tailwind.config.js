@@ -12,6 +12,8 @@ module.exports = {
       },
       colors: {
         ivory: "#FDFFF5", // Ivory
+        matteblack: "#28282B", // Matte Black
+        customBlue: "#2E95EC", // (46,149,236)
       },
     },
     screens: {

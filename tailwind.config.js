@@ -15,6 +15,9 @@ module.exports = {
         matteblack: "#28282B", // Matte Black
         customBlue: "#2E95EC", // (46,149,236)
       },
+      backgroundColor: {
+        'black-opacity-50': 'rgba(0, 0, 0, 0.5)',
+      },
     },
     screens: {
       '2xl': { max: '1535px' },

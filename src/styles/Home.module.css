@@ -22,6 +22,6 @@
 @media screen and (max-width: 1023px) {
     .homeBackgroundImage {
         background-attachment: scroll !important;
-        height: 50vh;
+        height: 60vh;
     } 
 }

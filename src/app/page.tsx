@@ -34,28 +34,22 @@ export default function Home() {
 
             <br />
 
-            <h2 className={`uppercase !font-thin text-ivory text-center text-4xl ${robotoFontThin.className}`}>Serving Maryland Since 2016</h2>
+            <h2 className={`uppercase !font-thin text-ivory text-center text-4xl lg:text-3xl md:text-2xl ${robotoFontThin.className}`}>Serving Maryland Since 2016</h2>
 
             <br /><br />
 
             <div className='flex flex-row justify-center items-center'>
               <Link href='/services' target='_self'>
-                <input type='button' value='Our Services' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50' />
+                <input type='button' value='Our Services' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50 lg:text-lg lg:w-[160px] md:text-base md:w-[140px] md:h-[45px]' />
               </Link>
 
               <Link href='/contact' target='_self'>
-                <input type='button' value='Free Estimate' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50' />
+                <input type='button' value='Free Estimate' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50 lg:text-lg lg:w-[160px] md:text-base md:w-[140px] md:h-[45px]' />
               </Link>
             </div>
 
 
           </div>
-
-
-
-
-
-
 
         </div>
       </main>

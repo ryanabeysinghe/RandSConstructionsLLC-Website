@@ -34,7 +34,7 @@ export default function Home() {
 
             <br />
 
-            <h2 className={`uppercase !font-thin text-ivory text-center text-4xl lg:text-3xl md:text-2xl ${robotoFontThin.className}`}>Serving Maryland Since 2016</h2>
+            <h2 className={`uppercase !font-thin text-ivory text-center text-4xl lg:text-3xl md:text-2xl sm:text-xl ${robotoFontThin.className}`}>Serving Maryland Since 2016</h2>
 
             <br /><br />
 

@@ -25,3 +25,10 @@
         height: 60vh;
     } 
 }
+
+/* @media screen and (max-width: 639px) {
+    .homeBackgroundImage {
+        background-attachment: scroll !important;
+        height: 50vh;
+    } 
+} */

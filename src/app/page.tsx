@@ -25,33 +25,58 @@ export default function Home() {
       <main className={`mt-24`}>
 
 
-        <div className={styles.homeBackgroundImage} >
-          {/* <Image src={HomeBackgroundImage} alt="Home Background Image" /> */}
+        {/* HOME Image Section */}
+        <section>
 
-          <div>
+          <div className={styles.homeBackgroundImage} >
+            {/* <Image src={HomeBackgroundImage} alt="Home Background Image" /> */}
 
-            <h1 className={`uppercase text-ivory text-center text-[5rem] lg:text-6xl md:text-5xl sm:text-4xl ${robotoFont.className}`}>R &amp; S Constructions</h1>
+            <div>
 
-            <br />
+              <h1 className={`uppercase text-ivory text-center text-[5rem] lg:text-6xl md:text-5xl sm:text-4xl xs:text-3xl xxxs:text-2xl ${robotoFont.className}`}>R &amp; S Constructions</h1>
 
-            <h2 className={`uppercase !font-thin text-ivory text-center text-4xl lg:text-3xl md:text-2xl sm:text-xl ${robotoFontThin.className}`}>Serving Maryland Since 2016</h2>
+              <br />
 
-            <br /><br />
+              <h2 className={`uppercase !font-thin text-ivory text-center text-4xl lg:text-3xl md:text-2xl sm:text-xl xs:text-lg xxxs:text-base ${robotoFontThin.className}`}>Serving Maryland &amp; DC Since 2016</h2>
 
-            <div className='flex flex-row justify-center items-center'>
-              <Link href='/services' target='_self'>
-                <input type='button' value='Our Services' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50 lg:text-lg lg:w-[160px] md:text-base md:w-[140px] md:h-[45px]' />
-              </Link>
+              <br /><br />
 
-              <Link href='/contact' target='_self'>
-                <input type='button' value='Free Estimate' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50 lg:text-lg lg:w-[160px] md:text-base md:w-[140px] md:h-[45px]' />
-              </Link>
+              <div className='flex flex-row justify-center items-center'>
+                <Link href='/services' target='_self'>
+                  <input type='button' value='Our Services' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50 lg:text-lg lg:w-[160px] md:text-base md:w-[140px] md:h-[45px] sm:text-sm sm:w-[130px] sm:h-[40px] xs:text-xs xs:w-[110px] xxxs:h-[35px]' />
+                </Link>
+
+                <Link href='/contact' target='_self'>
+                  <input type='button' value='Free Estimate' className='w-[180px] h-[50px] border-solid border-ivory border-2 outline-none text-ivory text-xl cursor-pointer uppercase mx-5 transition-all duration-500 ease-in-out hover:bg-black-opacity-50 lg:text-lg lg:w-[160px] md:text-base md:w-[140px] md:h-[45px] sm:text-sm sm:w-[130px] sm:h-[40px] xs:text-xs xs:w-[110px] xxxs:h-[35px]' />
+                </Link>
+              </div>
+
+
             </div>
+
+          </div>
+
+        </section>
+
+
+        {/* NEW SECTION */}
+        <section className='py-20 bg-customWhite'>
+
+          <div className='text-center'>
+
+            <h1 className='uppercase text-4xl text-black'>Full-Service General Contractor</h1>
+
+            
+
+            
+            
 
 
           </div>
 
-        </div>
+        </section>
+
+
       </main>
     </>
   );

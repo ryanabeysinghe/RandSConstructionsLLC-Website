@@ -62,16 +62,23 @@ export default function Home() {
         {/* NEW SECTION */}
         <section className='py-20 bg-customWhite'>
 
-          <div className='text-center'>
+          <div className='text-center text-black'>
 
-            <h1 className='uppercase text-4xl text-black'>Full-Service General Contractor</h1>
+            <h1 className='uppercase text-4xl'>Full-Service General Contractor</h1>
 
-            
+            <br /><br />
 
-            
-            
+            <p className={styles.homeServicesHeroDescription}>
+              From conception to completion, our entire team of estimators, designers, project managers and experienced
+              executives make our clients' needs a priority. We have experience in a wide variety of projects and delivery
+              methods, and use both time-proven practices and cutting-edge techniques to make sure our customers' projects meet
+              their maximum potential.
 
+              <br /><br />
 
+              <Link href='/services' className='pb-[0.4rem] inline border-solid border-black border-b-[2px] hover:text-customOrange hover:border-customOrange'>Learn More</Link>
+            </p>
+          
           </div>
 
         </section>

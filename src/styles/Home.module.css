@@ -19,6 +19,15 @@
     align-items: center;
 }
 
+.homeServicesHeroDescription {
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    width: min(90%, 75rem);
+    margin-inline: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 1023px) {
     .homeBackgroundImage {
         background-attachment: scroll !important;

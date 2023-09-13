@@ -14,7 +14,8 @@ module.exports = {
         ivory: "#FDFFF5", // Ivory
         matteblack: "#28282B", // Matte Black
         customBlue: "#2E95EC", // (46,149,236)
-        customWhite: "#E9EBEE" // (233, 235, 238)
+        customWhite: "#E9EBEE", // (233, 235, 238)
+        customOrange: "#d39850" // (211, 152, 80)
       },
       backgroundColor: {
         'black-opacity-50': 'rgba(0, 0, 0, 0.5)',

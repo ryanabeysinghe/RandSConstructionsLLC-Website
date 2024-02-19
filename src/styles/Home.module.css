@@ -21,8 +21,8 @@
 
 .homeServicesHeroDescription {
     text-align: left;
-    font-size: 1.3rem;
-    line-height: 1.5em;
+    /* font-size: 2rem;
+    line-height: 1.5em; */
     width: min(90%, 75rem);
     margin-inline: auto;
     font-family: Arial, Helvetica, sans-serif;

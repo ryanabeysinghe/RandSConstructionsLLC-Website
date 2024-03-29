@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import HomeBackgroundImage from '../../public/images/home_hero_img.jpg'
 import styles from '../styles/Home.module.css'
-import { Roboto } from 'next/font/google'
+import { Righteous, Roboto } from 'next/font/google'
 import Link from 'next/link';
 
 const robotoFont = Roboto({
@@ -15,6 +15,12 @@ const robotoFont = Roboto({
 const robotoFontThin = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
+  weight: '400'
+})
+
+const righteousFont = Righteous({
+  subsets: ['latin'],
+  variable: '--font-righteous',
   weight: '400'
 })
 
@@ -64,20 +70,35 @@ export default function Home() {
 
           <div className='text-center text-black'>
 
-            <h1 className='uppercase text-4xl'>Full-Service General Contractor</h1>
+            <h1 className='uppercase text-4xl md:text-3xl sm:text-2xl xs:text-xl xxs:text-lg xxxs:text-base'>Full-Service General Contractor</h1>
 
             <br /><br />
 
-            <p className={styles.homeServicesHeroDescription}>
-              From conception to completion, our entire team of estimators, designers, project managers and experienced
-              executives make our clients' needs a priority. We have experience in a wide variety of projects and delivery
-              methods, and use both time-proven practices and cutting-edge techniques to make sure our customers' projects meet
-              their maximum potential.
+            <p className={`${styles.homeServicesHeroDescription} text-xl lg:text-lg md:text-base xs:text-sm xxs:text-xs`}>
+              R &amp; S Constructions is a full-service residential design and build remodeling firm in Maryland. Specializing in 
+              new construction, custom home building and residential renovations. Dream big, dream small or dream one project 
+              at a time. R &amp; S Constructions has a diverse team of qualified professionals that can bring your vision to life.
+              We have been in business for over 6 years and strive toward sustainable, eco-friendly
+              construction using best practices. Our home remodeling contractors offer complete home remodeling, additions and
+              alterations, kitchen remodeling, bathroom remodeling, basement finishing and much more for homes in Maryland. R &amp; S Constructions
+              is a fully licensed and insured Certified General Contractor in the State of Maryland <strong>(MHIC #05-136714)</strong>.
 
               <br /><br />
 
-              <Link href='/services' className='pb-[0.4rem] inline border-solid border-black border-b-[2px] hover:text-customOrange hover:border-customOrange'>Learn More</Link>
+              R &amp; S Constructions takes pride in quality craftsmanship, attention to detail, and provides full and open
+              communication with each and every client. With each project, it is understood that this is not simply about
+              remodeling bathrooms, kitchens, or basements - it is about establishing a vision with the client and applying that
+              vision as the central focus throughout the construction process. We take great satisfaction in delivering a quality 
+              project on schedule to every client. Our motivation is to provide you with the highest quality workmanship and complete customer satisfaction!
+
+              {/* <Link href='/services' className='pb-[0.4rem] inline border-solid border-black border-b-[2px] hover:text-customOrange hover:border-customOrange'>Learn More</Link> */}
             </p>
+
+            <br /><br />
+
+            <Link href='/contact' target='_self'>
+              <input type='button' value='Contact Us Today' className={`w-[300px] h-[50px] border-none outline-none bg-black text-ivory cursor-pointer relative z-0 rounded-xl text-2xl uppercase font-righteous transition-all duration-500 ease-in-out hover:bg-ivory hover:text-black md:text-xl md:w-[250px] md:h-[50px] sm:text-lg sm:w-[220px] sm:h-[40px] xs:text-base xs:w-[200px] xxs:text-sm xxs:w-[170px] xxs:h-[35px] ${righteousFont.className}`} />
+            </Link>
           
           </div>
 

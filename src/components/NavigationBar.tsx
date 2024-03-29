@@ -10,18 +10,18 @@ import { motion } from 'framer-motion';
 import { FacebookIcon, LinkedInIcon } from './SocialMediaIcons';
 //import { useRouter } from 'next/router';
 
-
 interface CustomLinkProps {
     href: string;
     title: string;
     className?: string;
+    toggle: () => void;
 }
 
-const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = '' }) => {
+const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = '', toggle }) => {
     const pathname = usePathname();
 
     return (
-        <Link href={href} className={`${className} relative group`}>
+        <Link href={href} className={`${className} relative group`} onClick={toggle}>
             {title}
 
             <span className={`h-[2.5px] inline-block w-0 bg-customBlue absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-300 dark:bg-primary ${pathname === href ? 'w-full' : 'w-0'}`}>&nbsp;</span>
@@ -54,6 +54,10 @@ const NavigationBar = () => {
         setIsOpen(!isOpen)
     }
 
+    const handleLinkClick = () => {
+        setIsOpen(false); // Close the navbar when a link is clicked
+    }
+
     return (
         <header className={`w-full fixed z-10 overflow-hidden top-0 h-24 bg-ivory ${isOnTop ? '' : 'shadow-xl'}`}>
 
@@ -71,12 +75,12 @@ const NavigationBar = () => {
                 </button>
 
                 <nav className='lg:hidden'>
-                    <CustomLink href="/" title="home" className='mr-5 capitalize text-lg' />
-                    <CustomLink href="/about" title="about" className='mx-5 capitalize text-lg' />
-                    <CustomLink href="/services" title="services" className='mx-5 capitalize text-lg' />
-                    <CustomLink href="/gallery" title="gallery" className='mx-5 capitalize text-lg' />
-                    <CustomLink href="/locations" title="locations" className='mx-5 capitalize text-lg' />
-                    <CustomLink href="/contact" title="contact" className='ml-5 capitalize text-lg' />
+                    <CustomLink href="/" title="home" className='mr-5 capitalize text-lg' toggle={handleLinkClick} />
+                    <CustomLink href="/about" title="about" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
+                    <CustomLink href="/services" title="services" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
+                    <CustomLink href="/gallery" title="gallery" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
+                    <CustomLink href="/locations" title="locations" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
+                    <CustomLink href="/contact" title="contact" className='ml-5 capitalize text-lg' toggle={handleLinkClick} />
                 </nav>
 
             </div>
@@ -87,12 +91,12 @@ const NavigationBar = () => {
                 isOpen ?
                     <motion.div initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.5 }} className='min-w-[70vw] flex flex-col justify-between z-30 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg backdrop-blur-md py-10 bg-matteblack/90'>
                         <nav className='flex items-center flex-col justify-center text-ivory'>
-                            <CustomLink href="/" title="home" className='my-3 uppercase text-base' />
-                            <CustomLink href="/about" title="about" className='my-3 uppercase text-base' />
-                            <CustomLink href="/services" title="services" className='my-3 uppercase text-base' />
-                            <CustomLink href="/gallery" title="gallery" className='my-3 uppercase text-base' />
-                            <CustomLink href="/locations" title="locations" className='my-3 uppercase text-base' />
-                            <CustomLink href="/contact" title="contact" className='my-3 uppercase text-base' />
+                            <CustomLink href="/" title="home" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
+                            <CustomLink href="/about" title="about" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
+                            <CustomLink href="/services" title="services" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
+                            <CustomLink href="/gallery" title="gallery" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
+                            <CustomLink href="/locations" title="locations" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
+                            <CustomLink href="/contact" title="contact" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
                         </nav>
 
                         <nav className='flex items-center justify-center flex-wrap my-3'>

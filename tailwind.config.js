@@ -15,7 +15,9 @@ module.exports = {
         matteblack: "#28282B", // Matte Black
         customBlue: "#2E95EC", // (46,149,236)
         customWhite: "#E9EBEE", // (233, 235, 238)
-        customOrange: "#d39850" // (211, 152, 80)
+        customOrange: "#d39850", // (211, 152, 80)
+        customMustardYellow: "#d39850", // (211, 152, 80)
+        customGray: "#8b8b8b"
       },
       backgroundColor: {
         'black-opacity-50': 'rgba(0, 0, 0, 0.5)',

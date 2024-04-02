@@ -3,8 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import HomeBackgroundImage from '../../public/images/home_hero_img.jpg'
 import styles from '../styles/Home.module.css'
-import { Righteous, Roboto } from 'next/font/google'
+import CustomLink from '@/components/CustomLink';
+import { Monda, Righteous, Roboto } from 'next/font/google'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -65,16 +67,16 @@ export default function Home() {
         </section>
 
 
-        {/* NEW SECTION */}
+        {/* General Contractor SECTION */}
         <section className='py-20 bg-customWhite'>
 
           <div className='text-center text-black'>
 
-            <h1 className='uppercase text-4xl md:text-3xl sm:text-2xl xs:text-xl xxs:text-lg xxxs:text-base'>Full-Service General Contractor</h1>
+            <h1 className={`pb-10 uppercase text-black text-4xl sm:text-left md:text-3xl sm:text-2xl xs:text-xl xxs:text-lg xxxs:text-base xs:pb-6 ${styles.center_text_title}`}>Full-Service General Contractor</h1>
 
-            <br /><br />
+            {/* <br /><br /> */}
 
-            <p className={`${styles.homeServicesHeroDescription} text-xl lg:text-lg md:text-base xs:text-sm xxs:text-xs`}>
+            <p className={`${styles.center_text_description} text-xl lg:text-lg md:text-base xs:text-sm xxs:text-xs`}>
               R &amp; S Constructions is a full-service residential design and build remodeling firm in Maryland. Specializing in 
               new construction, custom home building and residential renovations. Dream big, dream small or dream one project 
               at a time. R &amp; S Constructions has a diverse team of qualified professionals that can bring your vision to life.
@@ -97,13 +99,41 @@ export default function Home() {
             <br /><br />
 
             <Link href='/contact' target='_self'>
-              <input type='button' value='Contact Us Today' className={`w-[300px] h-[50px] border-none outline-none bg-black text-ivory cursor-pointer relative z-0 rounded-xl text-2xl uppercase font-righteous transition-all duration-500 ease-in-out hover:bg-ivory hover:text-black md:text-xl md:w-[250px] md:h-[50px] sm:text-lg sm:w-[220px] sm:h-[40px] xs:text-base xs:w-[200px] xxs:text-sm xxs:w-[170px] xxs:h-[35px] ${righteousFont.className}`} />
+              <input type='button' value='Contact Us Today' className={`w-[300px] h-[50px] border-none outline-4 outline-dotted outline-customWhite bg-black text-ivory cursor-pointer relative z-0 rounded-xl text-2xl uppercase transition-all duration-500 ease-in-out hover:bg-ivory hover:text-black hover:outline-matteblack md:text-xl md:w-[250px] md:h-[50px] sm:text-lg sm:w-[220px] sm:h-[40px] xs:text-base xs:w-[200px] xxs:text-sm xxs:w-[170px] xxs:h-[35px] ${righteousFont.className}`} />
             </Link>
           
           </div>
 
         </section>
 
+        {/* General Contractor SECTION */}
+        <section className='py-16 bg-white'>
+
+          <div className='text-center text-black'>
+
+            <h1 className={`pb-10 uppercase text-black text-4xl md:text-3xl sm:text-2xl xs:text-xl xxs:text-lg xxxs:text-base xs:pb-6 sm:text-left ${styles.center_text_title} ${robotoFontThin.className}`}>We Offer a Wide Range of Services</h1>
+
+            {/* <br /><br /> */}
+
+            <p className={`${styles.center_text_description} text-xl lg:text-lg md:text-base xs:text-sm xxs:text-xs`}>
+              From conception to completion, our entire team of estimators, designers, project managers and experienced
+              executives make our clients' needs a priority. We have experience in a wide variety of projects and delivery
+              methods, and use both time-proven practices and cutting-edge techniques to make sure our customers' projects meet
+              their maximum potential.
+              
+              <br /><br />
+
+              {/* <Link href='/services'>
+                <input type={'button'} value={'Learn More'} />
+              </Link> */}
+
+              <CustomLink href='/services' title='Learn More' className='text-black transition-all duration-500 ease-out hover:text-customMustardYellow' /> 
+
+            </p>
+
+          </div>
+
+        </section>
 
       </main>
     </>

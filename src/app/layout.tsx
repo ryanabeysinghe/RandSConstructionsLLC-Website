@@ -5,7 +5,11 @@ import NavigationBar from '@/components/NavigationBar';
 import { Container } from 'react-bootstrap'
 import Head from 'next/head';
 import styles from '../styles/App.module.css'
+import Footer from '@/components/Footer';
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 //const inter = Inter({ subsets: ['latin'] })
 const montserratFont = Montserrat({
@@ -38,6 +42,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
             <div className='max-w-[1920px] mx-auto'>
               {children}
             </div>
+            <Footer />
           </div>
          </body>
       </html>

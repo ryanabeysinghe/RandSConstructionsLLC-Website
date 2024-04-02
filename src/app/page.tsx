@@ -3,10 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import HomeBackgroundImage from '../../public/images/home_hero_img.jpg'
 import styles from '../styles/Home.module.css'
-import CustomLink from '@/components/CustomLink';
 import { Monda, Righteous, Roboto } from 'next/font/google'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import FooterCustomLink from '@/components/FooterCustomLink';
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -127,7 +127,7 @@ export default function Home() {
                 <input type={'button'} value={'Learn More'} />
               </Link> */}
 
-              <CustomLink href='/services' title='Learn More' className='text-black transition-all duration-500 ease-out hover:text-customMustardYellow' /> 
+              <FooterCustomLink href='/services' title='Learn More' className='text-black transition-all duration-500 ease-out hover:text-customMustardYellow' /> 
 
             </p>
 

@@ -63,7 +63,7 @@ const NavigationBar = () => {
 
             <div className='flex justify-between items-center w-full h-full pl-16 pr-24 max-w-[1920px] mx-auto sm:pl-2 sm:pr-14'>
                 <Link href='/'>
-                    <Image src={Logo} alt='' width='140' height='75' className='cursor-pointer' priority />
+                    <Image src={Logo} alt='R &amp; S Constructions LLC Logo' width='140' height='75' className='cursor-pointer' priority />
                 </Link>
 
                 {/* Responsive Mobile Nav Bar Icon */}
@@ -79,7 +79,7 @@ const NavigationBar = () => {
                     <CustomLink href="/about" title="about" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
                     <CustomLink href="/services" title="services" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
                     <CustomLink href="/gallery" title="gallery" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
-                    <CustomLink href="/locations" title="locations" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
+                    <CustomLink href="/testimonials" title="testimonials" className='mx-5 capitalize text-lg' toggle={handleLinkClick} />
                     <CustomLink href="/contact" title="contact" className='ml-5 capitalize text-lg' toggle={handleLinkClick} />
                 </nav>
 
@@ -95,7 +95,7 @@ const NavigationBar = () => {
                             <CustomLink href="/about" title="about" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
                             <CustomLink href="/services" title="services" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
                             <CustomLink href="/gallery" title="gallery" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
-                            <CustomLink href="/locations" title="locations" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
+                            <CustomLink href="/testimonials" title="testimonials" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
                             <CustomLink href="/contact" title="contact" className='my-3 uppercase text-base xxxs:text-sm' toggle={handleLinkClick} />
                         </nav>
 

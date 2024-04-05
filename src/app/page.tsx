@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import { Monda, Righteous, Roboto } from 'next/font/google'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import FooterCustomLink from '@/components/FooterCustomLink';
+import CustomLink from '@/components/CustomLink';
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -68,7 +68,7 @@ export default function Home() {
 
 
         {/* General Contractor SECTION */}
-        <section className='py-20 bg-customWhite'>
+        <section className='py-20 bg-customWhite xs:py-10'>
 
           <div className='text-center text-black'>
 
@@ -107,7 +107,7 @@ export default function Home() {
         </section>
 
         {/* General Contractor SECTION */}
-        <section className='py-16 bg-white'>
+        <section className='py-16 bg-white xs:py-8'>
 
           <div className='text-center text-black'>
 
@@ -127,7 +127,7 @@ export default function Home() {
                 <input type={'button'} value={'Learn More'} />
               </Link> */}
 
-              <FooterCustomLink href='/services' title='Learn More' className='text-black transition-all duration-500 ease-out hover:text-customMustardYellow' /> 
+              <CustomLink href='/services' title='Learn More' className='text-black font-bold transition-all duration-500 ease-out hover:text-customMustardYellow' /> 
 
             </p>
 

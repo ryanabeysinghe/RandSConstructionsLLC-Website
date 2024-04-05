@@ -10,7 +10,7 @@ interface CustomLinkProps {
     className?: string;
 }
 
-const FooterCustomLink: React.FC<CustomLinkProps> = ({ href, title, className = '' }) => {
+const CustomLink: React.FC<CustomLinkProps> = ({ href, title, className = '' }) => {
     const pathname = usePathname();
 
     return (
@@ -22,4 +22,4 @@ const FooterCustomLink: React.FC<CustomLinkProps> = ({ href, title, className = 
     );
 };
 
-export default FooterCustomLink;
+export default CustomLink;

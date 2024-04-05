@@ -1,21 +1,21 @@
-import '../styles/globals.css'
-import { Inter, Montserrat } from 'next/font/google'
-import type { AppProps } from 'next/app';
-import NavigationBar from '@/components/NavigationBar';
-import { Container } from 'react-bootstrap'
-import Head from 'next/head';
+import '../styles/globals.css';
 import styles from '../styles/App.module.css'
 import Footer from '@/components/Footer';
+import NavigationBar from '@/components/NavigationBar';
 
+import { Inter, Montserrat } from 'next/font/google'
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import { Container } from 'react-bootstrap';
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 //const inter = Inter({ subsets: ['latin'] })
-const montserratFont = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat'
-});
+// const montserratFont = Montserrat({
+//   subsets: ['latin'],
+//   variable: '--font-montserrat'
+// });
 
 export const metadata = {
   title: 'R & S Constructions | General Contractor & Home Remodeling',
@@ -37,7 +37,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
 
       <html lang="en">
         <body>
-          <div className={`${montserratFont.className} font-sans w-full min-h-screen bg-ivory`}>
+          <div className={`w-full min-h-screen bg-ivory`}>
             <NavigationBar />
             <div className='max-w-[1920px] mx-auto'>
               {children}

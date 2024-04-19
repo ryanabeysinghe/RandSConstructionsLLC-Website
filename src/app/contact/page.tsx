@@ -72,7 +72,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className='bg-white py-16 xl:pb-0'>
+      <section className='bg-white py-16 xs:py-8 xl:pb-0'>
 
         <div className='w-full mx-auto'>
 
@@ -80,13 +80,12 @@ const Contact = () => {
 
             {/* Contact Form Left Container */}
             <div className={`md:w-full pl-20 lg:pl-12 sm:pl-9 xs:pl-5 xxxs:pl-4`}>
-              <h1 className={`uppercase text-[2.5rem] text-customMustardYellow font-medium md:text-4xl xs:text-3xl xxxs:text-2xl`}>Contact Us</h1>
+              <h1 className={`uppercase text-[2.5rem] text-customMustardYellow font-medium tracking-wide md:text-4xl xs:text-3xl xxxs:text-2xl ${mondaFont.className}`}>Contact Us</h1>
 
               <p className='pt-4 text-xl whitespace-normal md:text-lg xs:text-base xxxs:text-sm w-[93%]'>Contact us to discuss your design and construction needs. We&apos;ll create a custom plan for you!</p>
 
               <ContactForm />
             </div>
-
 
             {/* Contact Form Right Container */}
             <div className='flex w-[33%] justify-center pr-20 xl:pr-0 xl:pt-10 xl:w-full'>

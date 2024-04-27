@@ -1,9 +1,13 @@
 import React from 'react';
 import { Monda, Righteous, Roboto } from 'next/font/google';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 import styles from '@/styles/Contact.module.css';
 import SendEmail from '@/components/SendEmail';
 import ContactForm from '@/components/ContactForm';
+import Link from 'next/link';
+
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -41,6 +45,74 @@ const Contact = () => {
       </section>
 
       {/* Get In Touch Section */}
+      <section className='bg-matteblack'>
+
+        {/* Container */}
+        <div className={`flex flex-wrap flex-row md:flex-col ${styles.contact_get_in_touch_container}`}>
+
+          {/* Card One */}
+          <div className={`bg-customWhite w-[33.25%] h-40 flex justify-center items-center relative transition-transform duration-[2000ms] md:w-full md:h-28 ${styles.contact_get_in_touch_card_one}`}>
+
+            {/* Front Side */}
+            <div className={`text-center ${styles.contact_get_in_touch_card_front_side}`}>
+              <p className={`text-matteblack uppercase text-4xl lg:text-3xl sm:text-2xl xxs:text-xl ${mondaFont.className}`}>
+                <FontAwesomeIcon icon={faEnvelope} className='px-5' />
+                Email
+              </p>
+            </div>
+
+             {/* Back Side */}
+             <div className={`bg-customWhite ${styles.contact_get_in_touch_card_back_side}`}>
+              <Link href='mailto:randsconstructionsllc@hotmail.com' className={`text-lg transition-all duration-500 ease-out hover:text-customBlue lg:text-sm md:text-lg sm:text-base xxxs:text-sm ${mondaFont.className}`}>randsconstructionsllc@hotmail.com</Link>
+             </div>
+
+          </div>
+
+          {/* Divider */}
+          <div className='w-[0.125%] h-40 flex-none bg-matteblack md:h-2 md:w-full'></div>
+
+          {/* Card Two */}
+          <div className={`bg-customWhite w-[33.25%] h-40 flex justify-center items-center relative transition-transform duration-[2000ms] md:w-full md:h-28 ${styles.contact_get_in_touch_card_two}`}>
+
+            {/* Front Side */}
+            <div className={`text-center ${styles.contact_get_in_touch_card_front_side}`}>
+              <p className={`text-matteblack uppercase text-4xl lg:text-3xl sm:text-2xl xxs:text-xl ${mondaFont.className}`}>
+                <FontAwesomeIcon icon={faPhone} className='px-5' />
+                Phone
+              </p>
+            </div>
+
+             {/* Back Side */}
+             <div className={`bg-customWhite ${styles.contact_get_in_touch_card_back_side}`}>
+              <Link href='tel:301-768-0298' className={`text-lg transition-all duration-500 ease-out hover:text-customBlue lg:text-base md:text-lg sm:text-base xxxs:text-sm ${mondaFont.className}`}>(301) 768-0298</Link>
+             </div>
+
+          </div>
+
+          {/* Divider */}
+          <div className="w-[0.125%] h-40 flex bg-matteblack md:h-2 md:w-full"></div>
+
+          {/* Card Three */}
+          <div className={`bg-customWhite w-[33.25%] h-40 flex justify-center items-center relative transition-transform duration-[2000ms] md:w-full md:h-28 ${styles.contact_get_in_touch_card_three}`}>
+
+            {/* Front Side */}
+            <div className={`text-center ${styles.contact_get_in_touch_card_front_side}`}>
+              <p className={`text-matteblack uppercase text-4xl lg:text-3xl sm:text-2xl xxs:text-xl ${mondaFont.className}`}>
+                <FontAwesomeIcon icon={faLocationDot} className='px-5' />
+                Address
+              </p>
+            </div>
+
+             {/* Back Side */}
+             <div className={`bg-customWhite ${styles.contact_get_in_touch_card_back_side}`}>
+              <address className={`text-lg lg:text-base md:text-lg sm:text-base xxxs:text-sm ${mondaFont.className}`}>9235 BROADWATER DRIVE <br /> GAITHERSBURG, MD 20879</address>
+             </div>
+
+          </div>
+
+        </div>
+
+      </section>
       {/* <section className='bg-white py-16'>
 
         <div className={`text-center ${styles.center_text}`}>
@@ -72,7 +144,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className='bg-white py-16 xs:py-8 xl:pb-0'>
+      <section className='bg-white py-16 xs:pt-8 xl:pb-0'>
 
         <div className='w-full mx-auto'>
 

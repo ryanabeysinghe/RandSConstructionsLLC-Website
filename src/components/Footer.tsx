@@ -116,10 +116,10 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className='inline-block'>
-                                <a href='https://www.linkedin.com/company/r-and-s-constructions/' target='_blank' rel="noreferrer"
+                                <Link href='https://www.linkedin.com/company/r-and-s-constructions/' target='_blank' rel="noreferrer"
                                     className='text-ivory flex flex-col justify-between items-center h-8 w-8 border-solid border-2 border-customGray p-[6px] ml-3 transition-all duration-400 ease-out hover:text-customBlue'>
                                     <FontAwesomeIcon icon={faLinkedinIn} />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

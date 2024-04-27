@@ -83,7 +83,7 @@ const ContactForm = () => {
         const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
 
         if (match) {
-            return '(' + match[1] + ')-' + match[2] + '-' + match[3];
+            return '(' + match[1] + ') ' + match[2] + '-' + match[3];
         }
 
         return input;
@@ -182,7 +182,7 @@ const ContactForm = () => {
                         placeholder="Address"
                         onFocus={() => handleFocus("user_address")}
                         onBlur={handleBlur}
-                        className={`!w-[90%] md:!w-full xxxs:!text-base ${focusedInput === "user_address" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_address} `}
+                        className={`md:!w-full xxxs:!text-base ${focusedInput === "user_address" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_address} `}
                     />
                 </div>
 

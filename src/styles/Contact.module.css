@@ -66,6 +66,59 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.contact_get_in_touch_container {
+    /* width: 350px;
+    height: 500px;
+    perspective: 800px; */
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    /* justify-content: space-between; */
+}
+
+/* .contact_get_in_touch_card:hover > .contact_get_in_touch_card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+} */
+
+
+/* .contact_get_in_touch_container:hover > .contact_get_in_touch_card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+} */
+
+.contact_get_in_touch_card_one:hover,
+.contact_get_in_touch_card_two:hover,
+.contact_get_in_touch_card_three:hover {
+    /* cursor: pointer; */
+    transform: rotateY(180deg);
+}
+
+.contact_get_in_touch_card_one,
+.contact_get_in_touch_card_two, 
+.contact_get_in_touch_card_three {
+    transform-style: preserve-3d;
+}
+
+.contact_get_in_touch_card_front_side,
+.contact_get_in_touch_card_back_side {
+    /* width: 100%;
+    height: 100%; */
+    /* border-radius: 2rem; */
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.contact_get_in_touch_card_back_side {
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 5rem; */
+}
+
+
 
 @media screen and (max-width: 1023px) {
     .contact_background_img {

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
 import styles from '@/styles/Contact.module.css';
-import SendEmail from '@/components/SendEmail';
 import ContactForm from '@/components/ContactForm';
 import Link from 'next/link';
 
@@ -48,7 +47,7 @@ const Contact = () => {
       <section className='bg-matteblack'>
 
         {/* Container */}
-        <div className={`flex flex-wrap flex-row md:flex-col ${styles.contact_get_in_touch_container}`}>
+        <div className={`flex flex-wrap flex-row md:flex-col`}>
 
           {/* Card One */}
           <div className={`bg-customWhite w-[33.25%] h-40 flex justify-center items-center relative transition-transform duration-[2000ms] md:w-full md:h-28 ${styles.contact_get_in_touch_card_one}`}>
@@ -113,22 +112,7 @@ const Contact = () => {
         </div>
 
       </section>
-      {/* <section className='bg-white py-16'>
-
-        <div className={`text-center ${styles.center_text}`}>
-
-          <fieldset className={`rounded-xl border-[0.4rem] border-matteblack`}>
-
-            <legend>
-              <h1 className={`text-4xl ${righteousFont.className}`}>Get In Touch</h1>
-            </legend>
-
-          </fieldset>
-
-        </div>
-
-      </section> */}
-
+      
       {/* Free Estimate Section */}
       <section className='bg-[#252525] py-16 xs:py-8'>
 
@@ -170,7 +154,6 @@ const Contact = () => {
         </div>
 
       </section>
-
 
     </main>
   );

@@ -37,12 +37,26 @@ const SendEmail = () => {
             }
         });
 
+        // Email validation
+        const email = form.current['user_email'].value.trim();
+        if (email && !isValidEmail(email)) {
+            newErrors['user_email'] = 'Please enter a valid email address.';
+            hasError = true;
+        }
+
         if (hasError) {
             setErrors(newErrors);
             // Scroll to the first field with an error
             const firstErrorField = Object.keys(newErrors)[0];
             const errorFieldElement = form.current[firstErrorField];
             errorFieldElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Check if the email error exists and scroll to it if necessary
+            if (newErrors['user_email']) {
+                const emailErrorField = form.current['user_email'];
+                emailErrorField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
             setIsSubmitting(false);
             return;
         }
@@ -77,7 +91,7 @@ const SendEmail = () => {
         const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
 
         if (match) {
-            return '(' + match[1] + ')-' + match[2] + '-' + match[3];
+            return '(' + match[1] + ') ' + match[2] + '-' + match[3];
         }
 
         return input;
@@ -91,12 +105,18 @@ const SendEmail = () => {
         e.target.value = formatPhoneNumber(value);
     };
 
+    const isValidEmail = (email) => {
+        // Regular expression for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
     return (
         <form ref={form} onSubmit={sendEmail} noValidate>
 
             <input type="text" name="user_name" placeholder="Name *" required className={`${styles.about_form_user_name}`} onChange={() => clearError('user_name')} />
             {errors.user_name &&
-                <div className="mt-5 mb-2 flex justify-center">
+                <div className="mt-5 mb-5 flex justify-center">
                     <span className={`text-red-500 font-bold animate-pulse text-base xxs:text-sm ${montserratFont.className}`}>{errors.user_name}</span>
                 </div>
             }
@@ -104,9 +124,16 @@ const SendEmail = () => {
             {/* <br /><br /><br /> */}
 
 
-            <input type="email" name="user_email" placeholder="Email *" required className={`${styles.about_form_user_email}`} onChange={() => clearError('user_email')} />
+            <input 
+                type="email" 
+                name="user_email" 
+                placeholder="Email *" 
+                required 
+                className={`${styles.about_form_user_email}`} 
+                onChange={() => clearError('user_email')} 
+            />
             {errors.user_email &&
-                <div className="mt-5 mb-2 flex justify-center">
+                <div className="mt-5 mb-5 flex justify-center">
                     <span className={`text-red-500 font-bold animate-pulse text-base xxs:text-sm ${montserratFont.className}`}>{errors.user_email}</span>
                 </div>
             }
@@ -129,7 +156,7 @@ const SendEmail = () => {
                 <option>VA</option>
             </datalist>
             {errors.user_state &&
-                <div className="mt-5 mb-2 flex justify-center">
+                <div className="mt-5 mb-5 flex justify-center">
                     <span className={`text-red-500 font-bold animate-pulse text-base xxs:text-sm ${montserratFont.className}`}>{errors.user_state}</span>
                 </div>
             }
@@ -141,7 +168,7 @@ const SendEmail = () => {
 
             <textarea name="user_message" placeholder="How Can We Help You? *" required className={`${styles.about_form_user_message}`} onChange={() => clearError('user_message')} />
             {errors.user_message &&
-                <div className="mt-1 mb-4 flex justify-center">
+                <div className="mt-1 mb-5 flex justify-center">
                     <span className={`text-red-500 font-bold animate-pulse text-base xxs:text-sm ${montserratFont.className}`}>{errors.user_message}</span>
                 </div>
             }

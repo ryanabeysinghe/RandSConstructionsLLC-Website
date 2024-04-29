@@ -51,6 +51,13 @@ const ContactForm = () => {
             const firstErrorField = Object.keys(newErrors)[0];
             const errorFieldElement = form.current[firstErrorField];
             errorFieldElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Check if the email error exists and scroll to it if necessary
+            if (newErrors['user_email']) {
+                const emailErrorField = form.current['user_email'];
+                emailErrorField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
             setIsSubmitting(false);
             return;
         }
@@ -126,7 +133,7 @@ const ContactForm = () => {
                         required
                         onFocus={() => handleFocus("user_name")}
                         onBlur={handleBlur}
-                        onChange={() => clearError('user_name')} 
+                        onChange={() => clearError('user_name')}
                         className={`md:!w-full xxxs:!text-base ${focusedInput === "user_name" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_name}`}
                     />
                     {errors.user_name &&
@@ -146,7 +153,7 @@ const ContactForm = () => {
                         placeholder="Phone"
                         onFocus={() => handleFocus("user_phone")}
                         onBlur={handleBlur}
-                        onChange={handlePhoneNumberChange} 
+                        onChange={handlePhoneNumberChange}
                         className={`md:!w-full xxxs:!text-base ${focusedInput === "user_phone" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_phone} `}
                     />
                 </div>
@@ -162,7 +169,7 @@ const ContactForm = () => {
                         required
                         onFocus={() => handleFocus("user_email")}
                         onBlur={handleBlur}
-                        onChange={() => clearError('user_email')} 
+                        onChange={() => clearError('user_email')}
                         className={`!w-full xxxs:!text-base ${focusedInput === "user_email" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_email} `}
                     />
                     {errors.user_email &&
@@ -198,7 +205,7 @@ const ContactForm = () => {
                         required
                         onFocus={() => handleFocus("user_state")}
                         onBlur={handleBlur}
-                        onChange={() => clearError('user_state')} 
+                        onChange={() => clearError('user_state')}
                         className={`md:!w-full xxxs:!text-base ${focusedInput === "user_state" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_state} `}
                     />
                     <datalist id='select_state'>
@@ -253,7 +260,7 @@ const ContactForm = () => {
                         required
                         onFocus={() => handleFocus("user_message")}
                         onBlur={handleBlur}
-                        onChange={() => clearError('user_message')} 
+                        onChange={() => clearError('user_message')}
                         className={`!w-full xxxs:!text-base ${focusedInput === "user_message" ? 'border-customMustardYellow' : 'border-black'} ${styles.contact_form_user_message} `}
                     />
                     {errors.user_message &&

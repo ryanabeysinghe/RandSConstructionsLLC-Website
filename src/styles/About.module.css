@@ -1,10 +1,11 @@
-.about_background_img {
+.aboutBackgroundImg {
     position: relative;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../../public/images/about_hero_img.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -95,14 +96,14 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .about_background_img {
+    .aboutBackgroundImg {
         background-attachment: scroll !important;
         height: 40vh;
     } 
 }
 
 @media screen and (orientation:landscape) {
-    .about_background_img {
+    .aboutBackgroundImg {
         padding: 16rem 0;
     }
 }

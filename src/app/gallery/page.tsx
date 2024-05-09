@@ -41,9 +41,7 @@ const GalleryComponent: React.FC<GalleryComponentProps> = ({ imgSrc, title }) =>
 
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-black md:-right-3 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
 
-      
       <img src={imgSrc[0].src} alt={imgSrc[0].title} onClick={() => setOpen(true)} className="w-full h-auto object-cover border-2 border-solid border-black rounded-[0.5rem] cursor-pointer grayscale transition-all duration-500 ease-out hover:grayscale-0" />
-      
       
       <Lightbox
         plugins={[Captions, Counter, Fullscreen, Slideshow, Thumbnails]}
@@ -76,7 +74,7 @@ const Gallery = () => {
       {/* Gallery Hero Image Section */}
       <section>
 
-        <div className={`${styles.gallery_background_img}`}>
+        <div className={`${styles.galleryBackgroundImg}`}>
 
           <div>
             <h1 className={`uppercase text-ivory text-center text-[5rem] lg:text-6xl md:text-6xl sm:text-5xl xs:text-4xl xxxs:text-3xl ${robotoFont.className}`}>Gallery</h1>

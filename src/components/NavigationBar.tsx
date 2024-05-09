@@ -47,7 +47,7 @@ const NavigationBar = () => {
     return (
         <header className={`w-full fixed z-10 overflow-hidden top-0 h-24 bg-ivory ${isOnTop ? '' : 'shadow-xl'}`}>
 
-            <div className='flex justify-between items-center w-full h-full pl-16 pr-24 max-w-[1920px] mx-auto sm:pl-2 sm:pr-14'>
+            <div className='flex justify-between items-center w-full h-full pl-16 pr-24 max-w-[3840px] mx-auto sm:pl-2 sm:pr-14'>
                 <Link href='/'>
                     <Image src={Logo} alt='R &amp; S Constructions LLC Logo' width='140' height='75' className='cursor-pointer' priority />
                 </Link>

@@ -17,7 +17,7 @@ const righteousFont = Righteous({
 const Footer = () => {
 
     return (
-        <header className='w-full overflow-hidden max-w-[1920px] mx-auto bg-ivory'>
+        <header className='w-full overflow-hidden max-w-[3840px] mx-auto bg-ivory'>
 
             {/* Primary Footer Container */}
             <div className={`flex justify-between items-center w-full h-full pl-16 pr-24 py-7 ${righteousFont.className}`}>
@@ -116,10 +116,10 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className='inline-block'>
-                                <a href='https://www.linkedin.com/company/r-and-s-constructions/' target='_blank' rel="noreferrer"
+                                <Link href='https://www.linkedin.com/company/r-and-s-constructions/' target='_blank' rel="noreferrer"
                                     className='text-ivory flex flex-col justify-between items-center h-8 w-8 border-solid border-2 border-customGray p-[6px] ml-3 transition-all duration-400 ease-out hover:text-customBlue'>
                                     <FontAwesomeIcon icon={faLinkedinIn} />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

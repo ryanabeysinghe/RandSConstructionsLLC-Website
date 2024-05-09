@@ -39,7 +39,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         <body>
           <div className={`w-full min-h-screen bg-ivory`}>
             <NavigationBar />
-            <div className='max-w-[1920px] mx-auto'>
+            <div className='max-w-[3840px] mx-auto'>
               {children}
             </div>
             <Footer />

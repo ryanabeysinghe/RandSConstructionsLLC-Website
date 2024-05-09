@@ -3,7 +3,7 @@
 import styles from '@/styles/Contact.module.css';
 
 import React, { useRef, useState } from 'react';
-import emailjs from '';
+import emailjs from '@emailjs/browser';
 import { Montserrat } from 'next/font/google';
 
 const montserratFont = Montserrat({

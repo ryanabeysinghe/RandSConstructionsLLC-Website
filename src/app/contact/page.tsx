@@ -33,7 +33,7 @@ const Contact = () => {
       {/* Contact Hero Image Section */}
       <section>
 
-        <div className={`${styles.contact_background_img}`}>
+        <div className={`${styles.contactBackgroundImg}`}>
 
           <div>
             <h1 className={`uppercase text-ivory text-center text-[5rem] lg:text-6xl md:text-6xl sm:text-5xl xs:text-4xl xxxs:text-3xl ${robotoFont.className}`}>Contact Us</h1>

@@ -1,7 +1,6 @@
 .homeBackgroundImage {
-    /* background-color: rgb(0, 0, 0, 0.5); */
     position: relative;
-    height: 80vh;
+    height: 70vh;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../../public/images/home_hero_img.jpg);
     background-repeat: no-repeat;

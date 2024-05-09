@@ -1,10 +1,11 @@
-.gallery_background_img {
+.galleryBackgroundImg {
     position: relative;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../../public/images/gallery_hero_img.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -19,14 +20,14 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .gallery_background_img {
+    .galleryBackgroundImg {
         background-attachment: scroll !important;
         height: 40vh;
     } 
 }
 
 @media screen and (orientation:landscape) {
-    .gallery_background_img {
+    .galleryBackgroundImg {
         padding: 16rem 0;
     }
 }

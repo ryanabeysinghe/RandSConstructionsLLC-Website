@@ -30,13 +30,13 @@ const righteousFont = Righteous({
 export default function Home() {
   return (
     <>
-      <main className={`mt-24`}>
+      <main className='overflow-x-hidden mt-24'>
 
 
         {/* HOME Image Section */}
         <section>
 
-          <div className={styles.homeBackgroundImage} >
+          <div className={styles.homeBackgroundImage}>
             {/* <Image src={HomeBackgroundImage} alt="Home Background Image" /> */}
 
             <div>

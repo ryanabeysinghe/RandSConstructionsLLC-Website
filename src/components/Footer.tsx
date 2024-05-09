@@ -17,7 +17,7 @@ const righteousFont = Righteous({
 const Footer = () => {
 
     return (
-        <header className='w-full overflow-hidden max-w-[1920px] mx-auto bg-ivory'>
+        <header className='w-full overflow-hidden max-w-[3840px] mx-auto bg-ivory'>
 
             {/* Primary Footer Container */}
             <div className={`flex justify-between items-center w-full h-full pl-16 pr-24 py-7 ${righteousFont.className}`}>

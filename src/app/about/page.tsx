@@ -64,7 +64,7 @@ const About = () => {
                 by our employees and clients and look towards the future to perfect our brand.
 
                 <br /><br />
-                Our primary goal is exceeding our client's expectations in all aspects of the construction process. Our values of
+                Our primary goal is exceeding our client&apos;s expectations in all aspects of the construction process. Our values of
                 integrity, honesty, and accountability extend to all aspects of the project from estimating through closeout. We
                 believe open communication between the project team and client is a key component to the success of each project.
                 Our culture is engrained in all our employees and suppliers in order to strive for 100% client satisfaction.

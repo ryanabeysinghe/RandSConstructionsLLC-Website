@@ -117,8 +117,8 @@ export default function Home() {
 
             <p className={`${styles.center_text_description} text-xl lg:text-lg md:text-base xs:text-sm xxs:text-xs`}>
               From conception to completion, our entire team of estimators, designers, project managers and experienced
-              executives make our clients' needs a priority. We have experience in a wide variety of projects and delivery
-              methods, and use both time-proven practices and cutting-edge techniques to make sure our customers' projects meet
+              executives make our clients&apos; needs a priority. We have experience in a wide variety of projects and delivery
+              methods, and use both time-proven practices and cutting-edge techniques to make sure our customers&apos; projects meet
               their maximum potential.
               
               <br /><br />

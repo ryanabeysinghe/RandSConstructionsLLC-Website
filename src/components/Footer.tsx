@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Righteous } from 'next/font/google';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import Logo from '../../public/images/logo.png';
 import styles from '@/styles/Footer.module.css';

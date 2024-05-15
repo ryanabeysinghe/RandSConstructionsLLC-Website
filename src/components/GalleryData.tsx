@@ -52,6 +52,18 @@ import kitchen_remodeling_proj_2_before_2 from "@/assets/kitchen_remodeling/kitc
 import kitchen_remodeling_proj_3_after_1 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_3_after_1.jpeg";
 import kitchen_remodeling_proj_3_after_2 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_3_after_2.jpeg";
 
+{/* Imports for Window Installation */}
+import window_installation_proj_1_after_1 from "@/assets/window_installation/window_installation_proj_1_after_1.jpeg";
+import window_installation_proj_1_after_2 from "@/assets/window_installation/window_installation_proj_1_after_2.jpeg";
+import window_installation_proj_1_after_3 from "@/assets/window_installation/window_installation_proj_1_after_3.jpeg";
+import window_installation_proj_1_after_4 from "@/assets/window_installation/window_installation_proj_1_after_4.jpeg";
+import window_installation_proj_1_after_5 from "@/assets/window_installation/window_installation_proj_1_after_5.jpeg";
+import window_installation_proj_1_after_6 from "@/assets/window_installation/window_installation_proj_1_after_6.jpeg";
+import window_installation_proj_1_after_7 from "@/assets/window_installation/window_installation_proj_1_after_7.jpeg";
+import window_installation_proj_1_after_8 from "@/assets/window_installation/window_installation_proj_1_after_8.jpeg";
+import window_installation_proj_1_after_9 from "@/assets/window_installation/window_installation_proj_1_after_9.jpeg";
+import window_installation_proj_1_after_10 from "@/assets/window_installation/window_installation_proj_1_after_10.jpeg";
+
 export const basement_remodeling_slides = [
     {
         src: basement_remodeling_proj_1_after_1.src,
@@ -283,6 +295,59 @@ export const kitchen_remodeling_slides = [
     {
         src: kitchen_remodeling_proj_3_after_2.src,
         title: 'Project #3',
+        description: 'After'
+    },
+]
+
+export const window_installation_slides = [
+    {
+        src: window_installation_proj_1_after_1.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_2.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_3.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_4.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_5.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_6.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_7.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_8.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_9.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: window_installation_proj_1_after_10.src,
+        title: 'Project #1',
         description: 'After'
     },
 ]

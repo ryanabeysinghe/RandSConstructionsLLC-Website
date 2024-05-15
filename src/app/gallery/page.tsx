@@ -12,8 +12,12 @@ import "yet-another-react-lightbox/plugins/counter.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import { Captions, Counter, Fullscreen, Slideshow, Thumbnails } from "yet-another-react-lightbox/plugins";
-import { bathroomRemodelSlides, deck_restoration_slides, basementRemodelingSlides } from '@/components/GalleryData';
-import Image from 'next/image';
+import { 
+  deck_restoration_slides, basement_remodeling_slides, 
+  roof_replacement_slides, 
+  blinds_installation_slides,
+  kitchen_remodeling_slides,
+ } from '@/components/GalleryData';
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -37,11 +41,11 @@ const GalleryComponent: React.FC<GalleryComponentProps> = ({ imgSrc, title }) =>
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className='w-full h-auto flex flex-col items-center justify-center rounded-2xl border-2 border-solid border-black bg-white p-6 lg:p-4 md:p-6 relative xs:p-4'>
+    <div className='w-full h-auto flex flex-col items-center justify-center rounded-2xl border-2 border-solid border-matteblack bg-coconut p-6 lg:p-4 md:p-6 relative xs:p-4'>
 
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-black md:-right-3 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
 
-      <img src={imgSrc[0].src} alt={imgSrc[0].title} onClick={() => setOpen(true)} className="w-full h-auto object-cover border-2 border-solid border-black rounded-[0.5rem] cursor-pointer grayscale transition-all duration-500 ease-out hover:grayscale-0" />
+      <img src={imgSrc[0].src} alt={imgSrc[0].title} onClick={() => setOpen(true)} className="w-full h-auto object-cover border-2 border-solid border-matteblack rounded-[0.5rem] cursor-pointer grayscale transition-all duration-500 ease-out hover:grayscale-0" />
       
       <Lightbox
         plugins={[Captions, Counter, Fullscreen, Slideshow, Thumbnails]}
@@ -85,7 +89,7 @@ const Gallery = () => {
       </section>
 
       {/* Gallery Picture Section */}
-      <section className='bg-customWhite py-16 xs:py-20 xxs:py-16'>
+      <section className='bg-coconut py-16 xs:py-20 xxs:py-16'>
 
         <div className='w-full flex flex-col items-center justify-center'>
 
@@ -96,7 +100,7 @@ const Gallery = () => {
               {/* Row 1 */}
               <div className='col-span-4 md:col-span-12'>
 
-                <GalleryComponent imgSrc={basementRemodelingSlides} title='Basement Remodeling' />
+                <GalleryComponent imgSrc={blinds_installation_slides} title='Blinds Installation' />
 
               </div>
 
@@ -108,7 +112,20 @@ const Gallery = () => {
 
               <div className='col-span-4 md:col-span-12'>
 
-                <GalleryComponent imgSrc={deck_restoration_slides} title='Deck Restoration' />
+                <GalleryComponent imgSrc={roof_replacement_slides} title='Roof Replacement' />
+
+              </div>
+
+              {/* Row 2 */}
+              <div className='col-span-4 md:col-span-12'>
+
+                <GalleryComponent imgSrc={kitchen_remodeling_slides} title='Kitchen Remodeling' />
+
+              </div>
+              
+              <div className='col-span-4 md:col-span-12'>
+
+                <GalleryComponent imgSrc={basement_remodeling_slides} title='Basement Remodeling' />
 
               </div>
 

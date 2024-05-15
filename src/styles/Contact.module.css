@@ -5,8 +5,8 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url(../../public/images/contact_hero_img.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: fixed;
+    background-position: center center;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

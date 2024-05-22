@@ -17,7 +17,8 @@ import {
   roof_replacement_slides,
   blinds_installation_slides,
   kitchen_remodeling_slides,
-  window_installation_slides
+  window_installation_slides,
+  carpet_flooring_slides
 } from '@/components/GalleryData';
 
 import kitchen_remodeling_cover_photo from "@/assets/kitchen_remodeling/kitchen_remodeling_cover_photo.jpg";
@@ -26,6 +27,7 @@ import roof_replacement_cover_photo from "@/assets/roof_replacement/roof_replace
 import deck_restoration_cover_photo from "@/assets/deck_restoration/deck_restoration_cover_photo.jpg";
 import basement_remodeling_cover_photo from "@/assets/basement_remodeling/basement_remodeling_cover_photo.jpg";
 import window_installation_cover_photo from "@/assets/window_installation/window_installation_cover_photo.jpg";
+import carpet_flooring_cover_photo from "@/assets/carpet_flooring/carpet_flooring_cover_photo.jpg";
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -109,7 +111,7 @@ const Gallery = () => {
               {/* Row 1 */}
               <div className='col-span-4 md:col-span-12'>
 
-                <GalleryComponent imgSrc={kitchen_remodeling_slides} title='Kitchen Remodeling' coverPhoto={kitchen_remodeling_cover_photo.src} />
+                <GalleryComponent imgSrc={kitchen_remodeling_slides} title='Kitchen Remodel' coverPhoto={kitchen_remodeling_cover_photo.src} />
 
               </div>
 
@@ -119,13 +121,13 @@ const Gallery = () => {
 
               </div>
 
-              {/* Row 2 */}
               <div className='col-span-4 md:col-span-12'>
 
                 <GalleryComponent imgSrc={blinds_installation_slides} title='Blinds Installation' coverPhoto={blinds_installation_cover_photo.src} />
 
               </div>
 
+              {/* Row 2 */}
               <div className='col-span-4 md:col-span-12'>
 
                 <GalleryComponent imgSrc={window_installation_slides} title='Window Installation' coverPhoto={window_installation_cover_photo.src} />
@@ -140,9 +142,17 @@ const Gallery = () => {
 
               <div className='col-span-4 md:col-span-12'>
 
-                <GalleryComponent imgSrc={basement_remodeling_slides} title='Basement Remodeling' coverPhoto={basement_remodeling_cover_photo.src} />
+                <GalleryComponent imgSrc={basement_remodeling_slides} title='Basement Remodel' coverPhoto={basement_remodeling_cover_photo.src} />
 
               </div>
+
+              {/* Row 3 */}
+              <div className='col-span-4 md:col-span-12'>
+
+                <GalleryComponent imgSrc={carpet_flooring_slides} title='Carpet Flooring' coverPhoto={carpet_flooring_cover_photo.src} />
+
+              </div>
+
 
             </div>
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { Monda, Roboto } from 'next/font/google';
+import { Monda, Righteous, Roboto } from 'next/font/google';
 import React, { useState } from 'react';
 import Lightbox from "yet-another-react-lightbox";
 
@@ -18,7 +18,9 @@ import {
   blinds_installation_slides,
   kitchen_remodeling_slides,
   window_installation_slides,
-  carpet_flooring_slides
+  carpet_flooring_slides,
+  hardwood_flooring_slides,
+  bathroom_remodeling_slides
 } from '@/components/GalleryData';
 
 import kitchen_remodeling_cover_photo from "@/assets/kitchen_remodeling/kitchen_remodeling_cover_photo.jpg";
@@ -28,6 +30,9 @@ import deck_restoration_cover_photo from "@/assets/deck_restoration/deck_restora
 import basement_remodeling_cover_photo from "@/assets/basement_remodeling/basement_remodeling_cover_photo.jpg";
 import window_installation_cover_photo from "@/assets/window_installation/window_installation_cover_photo.jpg";
 import carpet_flooring_cover_photo from "@/assets/carpet_flooring/carpet_flooring_cover_photo.jpg";
+import hardwood_flooring_cover_photo from "@/assets/hardwood_flooring/hardwood_flooring_cover_photo.jpg";
+import bathroom_remodeling_cover_photo from "@/assets/bathroom_remodeling/bathroom_remodeling_cover_photo.jpg"
+import Link from 'next/link';
 
 const robotoFont = Roboto({
   subsets: ['latin'],
@@ -39,6 +44,12 @@ const mondaFont = Monda({
   subsets: ['latin'],
   variable: '--font-monda',
   weight: '700'
+})
+
+const righteousFont = Righteous({
+  subsets: ['latin'],
+  variable: '--font-righteous',
+  weight: '400'
 })
 
 interface GalleryComponentProps {
@@ -111,7 +122,32 @@ const Gallery = () => {
               {/* Row 1 */}
               <div className='col-span-4 md:col-span-12'>
 
+                <GalleryComponent imgSrc={bathroom_remodeling_slides} title='Bathroom Remodel' coverPhoto={bathroom_remodeling_cover_photo.src} />
+
+              </div>
+
+              <div className='col-span-4 md:col-span-12'>
+
                 <GalleryComponent imgSrc={kitchen_remodeling_slides} title='Kitchen Remodel' coverPhoto={kitchen_remodeling_cover_photo.src} />
+
+              </div>
+
+              <div className='col-span-4 md:col-span-12'>
+
+                <GalleryComponent imgSrc={basement_remodeling_slides} title='Basement Remodel' coverPhoto={basement_remodeling_cover_photo.src} />
+
+              </div>
+
+              {/* Row 2 */}
+              <div className='col-span-4 md:col-span-12'>
+
+                <GalleryComponent imgSrc={hardwood_flooring_slides} title='Hardwood Flooring' coverPhoto={hardwood_flooring_cover_photo.src} />
+
+              </div>
+
+              <div className='col-span-4 md:col-span-12'>
+
+                <GalleryComponent imgSrc={carpet_flooring_slides} title='Carpet Flooring' coverPhoto={carpet_flooring_cover_photo.src} />
 
               </div>
 
@@ -121,13 +157,13 @@ const Gallery = () => {
 
               </div>
 
+              {/* Row 3 */}
               <div className='col-span-4 md:col-span-12'>
 
                 <GalleryComponent imgSrc={blinds_installation_slides} title='Blinds Installation' coverPhoto={blinds_installation_cover_photo.src} />
 
               </div>
 
-              {/* Row 2 */}
               <div className='col-span-4 md:col-span-12'>
 
                 <GalleryComponent imgSrc={window_installation_slides} title='Window Installation' coverPhoto={window_installation_cover_photo.src} />
@@ -140,23 +176,32 @@ const Gallery = () => {
 
               </div>
 
-              <div className='col-span-4 md:col-span-12'>
-
-                <GalleryComponent imgSrc={basement_remodeling_slides} title='Basement Remodel' coverPhoto={basement_remodeling_cover_photo.src} />
-
-              </div>
-
-              {/* Row 3 */}
-              <div className='col-span-4 md:col-span-12'>
-
-                <GalleryComponent imgSrc={carpet_flooring_slides} title='Carpet Flooring' coverPhoto={carpet_flooring_cover_photo.src} />
-
-              </div>
-
+              {/* Row 4 */}
 
             </div>
 
           </div>
+
+        </div>
+
+      </section>
+
+      {/* Start New Project Section */}
+      <section className={styles.galleryImageOne}>
+
+        <div className='flex flex-col text-center 2xl:px-10 sm:px-5'>
+
+          <h1 className={`uppercase text-ivory break-words text-[2.5rem] xl:text-4xl lg:text-3xl sm:text-2xl xs:text-lg xxxs:text-base ${robotoFont.className}`}>start your next project today with r &amp; s constructions</h1>
+
+          <br /><br />
+
+          <h2 className={`uppercase text-ivory break-words text-3xl xl:text-2xl lg:text-xl sm:text-lg xs:text-base xxs:text-sm xxxs:text-xs ${mondaFont.className}`}>Transform your dream home into reality by connecting with our experts today&#33;</h2>
+
+          <br /><br />
+
+          <Link href='/contact' target='_self'>
+              <input type='button' value='Contact Us Today' className={`w-[300px] h-[50px] border-none outline-4 outline-none outline-customWhite text-ivory cursor-pointer relative z-0 rounded-xl text-2xl uppercase transition-all duration-500 ease-in-out hover:bg-ivory hover:text-black hover:outline-ivory md:text-xl md:w-[250px] md:h-[50px] sm:text-lg sm:w-[220px] sm:h-[40px] xs:text-base xs:w-[200px] xxs:text-sm xxs:w-[170px] xxs:h-[35px] ${righteousFont.className}`} />
+          </Link>
 
         </div>
 

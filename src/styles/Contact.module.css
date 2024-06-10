@@ -101,7 +101,7 @@
 }
 
 @media screen and (orientation:landscape) {
-    .contactBackgroundImg {
+    /* .contactBackgroundImg {
         padding: 16rem 0;
-    }
+    } */
 }

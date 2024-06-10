@@ -40,6 +40,13 @@
     } 
 }
 
+@media screen and (orientation:landscape) {
+    /* .homeBackgroundImage {
+        padding: 16rem 0;
+    } */
+}
+
+
 /* @media screen and (max-width: 639px) {
     .homeBackgroundImage {
         background-attachment: scroll !important;

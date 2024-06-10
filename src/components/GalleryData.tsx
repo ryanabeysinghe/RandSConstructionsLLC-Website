@@ -51,6 +51,8 @@ import kitchen_remodeling_proj_2_before_1 from "@/assets/kitchen_remodeling/kitc
 import kitchen_remodeling_proj_2_before_2 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_2_before_2.png";
 import kitchen_remodeling_proj_3_after_1 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_3_after_1.jpeg";
 import kitchen_remodeling_proj_3_after_2 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_3_after_2.jpeg";
+import kitchen_remodeling_proj_4_after_1 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_4_after_1.jpeg";
+import kitchen_remodeling_proj_4_after_2 from "@/assets/kitchen_remodeling/kitchen_remodeling_proj_4_after_2.jpeg";
 
 {/* Imports for Window Installation */}
 import window_installation_proj_1_after_1 from "@/assets/window_installation/window_installation_proj_1_after_1.jpeg";
@@ -73,6 +75,13 @@ import carpet_flooring_proj_1_after_1 from '@/assets/carpet_flooring/carpet_floo
 import carpet_flooring_proj_1_after_2 from '@/assets/carpet_flooring/carpet_flooring_proj_1_after_2.jpeg';
 import carpet_flooring_proj_1_after_3 from '@/assets/carpet_flooring/carpet_flooring_proj_1_after_3.jpeg';
 import carpet_flooring_proj_1_after_4 from '@/assets/carpet_flooring/carpet_flooring_proj_1_after_4.jpeg';
+
+{/* Imports for Hardwood Flooring */}
+import hardwood_flooring_proj_1_after_1 from "@/assets/hardwood_flooring/hardwood_flooring_proj_1_after_1.jpeg";
+import hardwood_flooring_proj_1_after_2 from "@/assets/hardwood_flooring/hardwood_flooring_proj_1_after_2.jpeg";
+import hardwood_flooring_proj_1_after_3 from "@/assets/hardwood_flooring/hardwood_flooring_proj_1_after_3.jpeg";
+import hardwood_flooring_proj_1_after_4 from "@/assets/hardwood_flooring/hardwood_flooring_proj_1_after_4.jpeg";
+import hardwood_flooring_proj_1_after_5 from "@/assets/hardwood_flooring/hardwood_flooring_proj_1_after_5.jpeg";
 
 export const basement_remodeling_slides = [
     {
@@ -307,6 +316,16 @@ export const kitchen_remodeling_slides = [
         title: 'Project #3',
         description: 'After'
     },
+    {
+        src: kitchen_remodeling_proj_4_after_1.src,
+        title: 'Project #4',
+        description: 'After'
+    },
+    {
+        src: kitchen_remodeling_proj_4_after_2.src,
+        title: 'Project #4',
+        description: 'After'
+    },
 ]
 
 export const window_installation_slides = [
@@ -400,6 +419,47 @@ export const carpet_flooring_slides = [
     },
     {
         src: carpet_flooring_proj_1_after_4.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+]
+
+export const hardwood_flooring_slides = [
+    {
+        src: hardwood_flooring_proj_1_after_1.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: hardwood_flooring_proj_1_after_2.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: hardwood_flooring_proj_1_after_3.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: hardwood_flooring_proj_1_after_4.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+    {
+        src: hardwood_flooring_proj_1_after_5.src,
+        title: 'Project #1',
+        description: 'After'
+    },
+]
+
+export const bathroom_remodeling_slides = [
+    {
+        src: basement_remodeling_proj_1_after_1.src,
+        title: 'Project #1',
+        description: 'Before'
+    },
+    {
+        src: basement_remodeling_proj_1_after_1.src,
         title: 'Project #1',
         description: 'After'
     },

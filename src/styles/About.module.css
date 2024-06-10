@@ -103,9 +103,9 @@
 }
 
 @media screen and (orientation:landscape) {
-    .aboutBackgroundImg {
+    /* .aboutBackgroundImg {
         padding: 16rem 0;
-    }
+    } */
 }
 
 @media screen and (max-width: 479px) {

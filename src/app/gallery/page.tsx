@@ -191,14 +191,13 @@ const Gallery = () => {
 
         <div className='flex flex-col text-center 2xl:px-10 sm:px-5'>
 
-          <h1 className={`uppercase text-ivory break-words text-[2.5rem] xl:text-4xl lg:text-3xl sm:text-2xl xs:text-lg xxxs:text-base ${robotoFont.className}`}>start your next project today with r &amp; s constructions</h1>
+          <h1 className={`uppercase text-ivory break-words text-5xl xl:text-4xl lg:text-3xl md:text-4xl sm:text-3xl xs:text-2xl xxxs:text-xl ${robotoFont.className}`}>start your next project today with r &amp; s constructions</h1>
 
-          <br /><br />
+          <br />
 
-          <h2 className={`uppercase text-ivory break-words text-3xl xl:text-2xl lg:text-xl sm:text-lg xs:text-base xxs:text-sm xxxs:text-xs ${mondaFont.className}`}>Transform your dream home into reality by connecting with our experts today&#33;</h2>
+          <h2 className={`pb-5 text-ivory break-words text-3xl xl:text-2xl lg:text-xl sm:text-lg xs:text-base xxxs:text-sm`}>Transform your dream home into reality by connecting with our experts today&#33;</h2>
 
-          <br /><br />
-
+          <br />
           <Link href='/contact' target='_self'>
               <input type='button' value='Contact Us Today' className={`w-[300px] h-[50px] border-none outline-4 outline-none outline-customWhite text-ivory cursor-pointer relative z-0 rounded-xl text-2xl uppercase transition-all duration-500 ease-in-out hover:bg-ivory hover:text-black hover:outline-ivory md:text-xl md:w-[250px] md:h-[50px] sm:text-lg sm:w-[220px] sm:h-[40px] xs:text-base xs:w-[200px] xxs:text-sm xxs:w-[170px] xxs:h-[35px] ${righteousFont.className}`} />
           </Link>

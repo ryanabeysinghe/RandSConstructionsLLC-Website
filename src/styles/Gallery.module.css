@@ -24,7 +24,7 @@
     /* height: 80vh; */
     /* height: 50vh; */
     height: 50vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     background-image: url(../../public/images/gallery_image_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -42,11 +42,14 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .galleryBackgroundImg,
-    .galleryImageOne {
+    .galleryBackgroundImg {
         background-attachment: scroll !important;
         height: 40vh;
-    } 
+    }
+    .galleryImageOne {
+        background-attachment: scroll !important;
+        height: 50vh;
+    }
 }
 
 @media screen and (orientation:landscape) {
